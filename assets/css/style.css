@@ -1,0 +1,1028 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 13px;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    line-height: 1.6;
+    color: #333;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.primary-color {
+    color: #06C167;
+}
+
+.header {
+    background-color: #e8f4f0;
+}
+
+.header .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.header .logo {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #06C167;
+    font-style: Medium;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+
+.menu-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    cursor: pointer;
+    color: #06C167;
+    border: 2px solid #06C167;
+    height: 40px;
+    width: 50px;
+}
+
+.header .nav-links {
+    display: none;
+    list-style: none;
+}
+
+.header .nav-links li {
+    margin-left: 1rem;
+}
+
+.header .nav-links a {
+    text-decoration: none;
+    color: #1D1D1F;
+    font-size: 1rem;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    padding: 0px 1rem;
+}
+
+.header .nav-links a.active,
+.header .nav-links a:hover {
+    color: #06C167;
+    position: relative;
+}
+
+.header .nav-links a.active:after,
+.header .nav-links a:hover:after {
+    content: "";
+    background: #06C167;
+    position: absolute;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    margin-top: 30px;
+    left: 50%;
+}
+
+.header .hero {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.header .hero-text h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #1D1D1F;
+}
+
+.header .hero-text p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    line-height: 142%;
+    letter-spacing: 0%;
+    color: #1D1D1FBF;
+}
+
+.primary-button {
+    background-color: #06C167;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 1rem 0;
+    font-weight: 400;
+    width: 100%;
+}
+
+.logoipsum-section {
+    background: white;
+    position: relative;
+    margin-top: -200px;
+    padding-top: 200px;
+    z-index: 1;
+}
+
+.header .logoipsum-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1.5rem;
+    padding: 3rem 0;
+}
+
+.logoipsum-container img {
+    height: 2.6rem;
+    opacity: 0.4;
+}
+
+.header .hero-image {
+    margin-top: 1rem;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-image-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.header .hero-image .hero-image-container>img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    clip-path: polygon(0 0, 100% 0, 100% 93%, 0% 100%);
+}
+
+.header .rating {
+    background-color: #ffffff;
+    color: #1D1D1F;
+    padding: 14px 16px;
+    border-radius: 0.5rem;
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2rem;
+    width: max-content;
+}
+
+.header .rating .rating-star {
+    color: #06C167;
+}
+
+.ratting-comment {
+    background-color: #ffffff;
+    color: #1D1D1F;
+    padding: 4px 16px 4px 4px;
+    border-radius: 0.5rem;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2rem;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: max-content;
+
+}
+
+.ratting-comment>img {
+    height: 40px;
+    width: auto;
+    border-radius: 50%;
+}
+
+.header .hero-image .hero-image-pattern {
+    position: absolute;
+    bottom: -30px;
+    right: -30px;
+}
+
+/* Benefits Styles */
+.benefits-section {
+    background-color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.benefits-section .common-container {
+    border-top: 0.5px solid #707070;
+    border-bottom: 0.5px solid #707070;
+}
+
+.benefits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.benefit-item {
+    flex: 1;
+    min-width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+    min-width: 150px;
+    gap: 1rem;
+}
+
+.benefit-item .benefit-item-icon {
+    background-color: #F3FCF7;
+    color: #06C167;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    font-size: 26px;
+}
+
+.benefit-item .benefit-text {
+    text-align: center;
+}
+
+.benefit-item h4 {
+    color: #1D1D1F;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    margin-bottom: 8px;
+}
+
+.benefit-item p {
+    color: #1D1D1F;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.healthy-food {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    background-color: #fff;
+}
+
+.healthy-food .healthy-image {
+    background-color: #F0F1EC;
+    padding: 0 1.8rem 1.8rem 1.8rem;
+    position: relative;
+}
+
+.healthy-food .healthy-image img {
+    width: 100%;
+    height: auto;
+    margin-top: -1.8rem;
+}
+
+.healthy-food .healthy-text {
+    padding: 2rem 0;
+}
+
+.healthy-food p {
+    color: #1D1D1F;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.healthy-food h2 {
+    color: #1D1D1F;
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.healthy-food ul {
+    list-style: none;
+}
+
+.healthy-food ul li {
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 1.5rem;
+    font-weight: 400;
+    color: #1D1D1F;
+    font-size: 16px;
+}
+
+.healthy-food ul li:before {
+    content: "✔";
+    color: #06C167;
+    position: absolute;
+    left: 0;
+}
+
+.veggie-food-section {
+    background-color: white;
+    padding: 2rem 1rem;
+}
+
+.veggie-food {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.veggie-food .veggie-text {
+    padding: 2rem 0;
+}
+
+.veggie-food h2 {
+    color: #1D1D1F;
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.veggie-food p {
+    color: #1D1D1F;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.veggie-food .veggie-image {
+    background-color: #F0F1EC;
+    padding: 0 1.8rem 1.8rem 1.8rem;
+    position: relative;
+}
+
+.veggie-food .veggie-image img {
+    width: 100%;
+    height: auto;
+    margin-top: -1.8rem;
+}
+
+.veggie-food .stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+
+.veggie-food .stats div {
+    padding: 1rem 1rem;
+}
+
+.veggie-food .stats h3 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #06C167;
+    margin-bottom: 4px;
+    text-align: center;
+
+}
+
+.veggie-food .stats p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #1D1D1F;
+    text-align: center;
+
+}
+
+.variety-foods {
+    padding: 2rem 1rem;
+    background-color: #fff;
+}
+
+.variety-foods h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.food-card-section {
+    padding: 2rem 1rem;
+}
+
+.food-card-section h2 {
+    color: #1D1D1F;
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.food-card-section p {
+    color: #1D1D1F;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.food-cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.food-card {
+    width: 100%;
+}
+
+.food-card-img {
+    height: 292px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.food-card-img img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.food-card-text {
+    height: 292px;
+    width: 100%;
+    border: 1px solid #06C167;
+    background-color: #F0F1EC;
+    text-align: left;
+    padding: 40px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.food-card-text h3 {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #1D1D1F;
+}
+
+.food-card-text p {
+    text-align: left;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.food-card-text .discover-button {
+    cursor: pointer;
+    padding: 18px 20px;
+    background-color: #F0EDE2;
+    color: #06C167;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    border: none;
+}
+
+.popular-products {
+    padding: 4rem 1rem;
+}
+
+
+.popular-products h2 {
+    color: #1D1D1F;
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.popular-products p {
+    color: #1D1D1F;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+.product-cards {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.product-card {
+    width: 100%;
+    text-align: center;
+    border: 2px solid #76767540;
+    padding: 2rem;
+    position: relative;
+}
+
+.product-card:hover {
+    border: 2px solid #06C167;
+}
+
+.product-card .img-mpp {
+    position: relative;
+    height: 190px;
+    width: 190px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.product-card .img-mpp img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.product-card .rating {
+    color: #06C167;
+    font-size: 14px;
+}
+
+.product-card h3 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin: 12px 0px;
+
+}
+
+.product-card p {
+    margin: 16px 0px;
+}
+
+.product-card .cross-price {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-decoration: line-through;
+    color: #767675;
+
+}
+
+.product-card .real-price {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #06C167;
+}
+
+.product-card .buy-button {
+    border: 2px solid #06C167;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    padding: 18px 0px;
+    width: 100%;
+    color: #06C167;
+    cursor: pointer;
+    background-color: white;
+
+}
+
+.ingredients {
+    text-align: center;
+    background-image: url("/assets/images/ingredients.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.ingredients-backdrop {
+    padding: 5rem 2rem;
+    background-color: #02020296;
+    color: white;
+}
+
+
+.ingredients h2 {
+    font-weight: 500;
+    font-size: 2.2rem;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+
+/* Footer Styles */
+.footer {
+    padding: 2rem 1rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.footer-column {
+    margin: 1rem 0;
+    flex: 1;
+    min-width: 150px;
+
+}
+
+.footer-top h2 {
+    margin-bottom: 1rem;
+    height: 2.2rem;
+    color: #06C167;
+    font-weight: 700;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-column input {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    width: 100%;
+}
+
+.footer-column .subscribe-button {
+    background-color: #06C167;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+.footer .social-icons {
+    margin-top: 1rem;
+}
+
+.footer .social-icons i {
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
+}
+
+.footer .copyright {
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* Media Queries for Desktop */
+@media (min-width: 768px) {
+    :root {
+        font-size: 14px;
+    }
+
+    .common-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .header .nav {
+        padding: 2rem;
+    }
+
+    .menu-icon {
+        display: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    .header .nav-links {
+        display: flex;
+    }
+
+    .header .hero {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 3rem 2rem;
+        gap: 60px;
+    }
+
+    .header .hero-text {
+        text-align: left;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .hero-text-top {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        padding-right: 10px;
+    }
+
+    .header .hero-text h1 {
+        font-size: 3rem;
+    }
+
+    .header .hero-image {
+        flex: 1;
+        margin-top: 0;
+        z-index: 2;
+        position: relative;
+    }
+
+    .logoipsum-container-space {
+        height: 100px;
+    }
+
+    .logoipsum-section {
+        position: relative;
+        margin-top: -100px;
+        padding: 0 2rem;
+        z-index: 1;
+    }
+
+    .header .logoipsum-container {
+        width: 50%;
+    }
+
+    .logoipsum {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    .benefits {
+        padding: 2rem 1rem;
+    }
+
+    .benefit-item {
+        flex-direction: row;
+        justify-content: left;
+        align-items: start;
+        padding: 2rem 1rem;
+        min-width: 200px;
+        gap: 10px;
+    }
+
+    .benefit-item .benefit-text {
+        display: flex;
+        text-align: left;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .healthy-food {
+        flex-direction: row;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .healthy-food .healthy-image {
+        flex: 1;
+        background-color: #F3FAFB;
+        padding: 0 2rem 4rem 2rem;
+    }
+
+    .healthy-food .healthy-image img {
+        margin-top: 0;
+    }
+
+    .healthy-food .healthy-text {
+        flex: 1.2;
+        padding: 0 1rem;
+    }
+
+    .healthy-food p {
+        text-align: left;
+    }
+
+    .healthy-food h2 {
+        text-align: left;
+    }
+
+    .veggie-food {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .veggie-food h2 {
+        text-align: left;
+    }
+
+    .veggie-food p {
+        text-align: left;
+    }
+
+    .veggie-food .veggie-text {
+        flex: 1.2;
+        padding: 0 1rem;
+    }
+
+    .veggie-food .veggie-image {
+        flex: 1;
+        background-color: #F3FAFB;
+        padding: 0 0 3.8rem 3.8rem;
+    }
+
+    .veggie-food .veggie-image img {
+        margin-top: 0;
+
+    }
+
+    .veggie-food .stats {
+        flex-direction: row;
+        justify-content: left;
+        gap: 1rem;
+    }
+
+    .primary-button {
+        width: max-content;
+    }
+
+    .food-card {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .food-card div {
+        width: 50%;
+    }
+
+    .food-card-text {
+        background-color: #F3FCF7;
+    }
+
+    .food-card-text .discover-button {
+        background-color: #E6F9F0;
+    }
+
+    .product-cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        position: relative;
+    }
+
+    .product-cards .product-card {
+        width: 270px;
+    }
+
+    .ingredients button {
+        width: max-content;
+    }
+
+
+    .footer-top {
+        display: flex;
+        text-align: left;
+    }
+
+    .footer-left {
+        width: 30%;
+        gap: 20px;
+    }
+
+    .footer-right {
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+@media (min-width: 992px) {
+    :root {
+        font-size: 16px;
+    }
+
+    .header .hero {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 3rem 2rem;
+        gap: 60px;
+    }
+
+    .header .hero-text {
+        text-align: left;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .hero-text-top {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        padding-right: 60px;
+    }
+
+    .header .hero-image {
+        flex: 1;
+        margin-top: 0;
+        z-index: 2;
+    }
+
+    .header .rating {
+        left: -100px;
+        transform: none;
+        top: 50%;
+        height: fit-content;
+    }
+
+    .ratting-comment {
+        transform: none;
+        top: 35%;
+        height: fit-content;
+        width: fit-content;
+        left: 80%;
+        white-space: nowrap;
+    }
+
+    .logoipsum-container-space {
+        height: 200px;
+    }
+
+    .logoipsum-section {
+        background: white;
+        height: 220px;
+        position: relative;
+        margin-top: -200px;
+        padding: 0 2rem;
+        z-index: 1;
+    }
+
+    .logoipsum {
+        display: flex;
+    }
+
+    .healthy-food .healthy-image {
+        flex: 1;
+        padding: 0 2.5rem 4rem 2.5rem;
+    }
+
+    .food-cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .food-card {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .reverse-order-1 {
+        order: 1;
+    }
+
+    .reverse-order-2 {
+        order: 2;
+    }
+
+    .food-card div {
+        width: 50%;
+    }
+
+}
