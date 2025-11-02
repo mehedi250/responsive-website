@@ -622,7 +622,6 @@ body {
 
 .ingredients {
     text-align: center;
-    background-image: url("/assets/images/ingredients.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
